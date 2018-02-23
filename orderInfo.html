@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./css/orderInfo.css"></link>
   <script src="./js/lib/jquery-3.3.1.min.js"></script>
-  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/lib/bootstrap.min.js"></script>
   <script src="./js/orderInfo.js"></script>
 </head>
 
@@ -18,7 +17,48 @@
   </header>
   <div class="o2o_content">
     <div id="order_list">
-      <!-- 时间轴一步 -->
+      <!-- 订单号 -->
+      <div class="order_number">
+        <!-- 左侧 -->
+        <div class="order_number_logo">
+        </div>
+        <!-- 右侧 -->
+        <div class="order_number_content">
+          订单号：<span id="number">1004-909</span>
+        </div>
+      </div>
+
+      <!-- 时间轴一步 已经完成的一步 -->
+      <div class="order_item">
+        <!-- 左侧 -->
+        <div class="step_time_done">
+          <div class="step_time_title">2月9日</div>
+          <div class="step_time_desc">10:30</div>
+        </div>
+        <!-- 右侧 -->
+        <div class="step_desc_done">
+          <div class="step_desc_title">已支付订单截图上传 已支付订单截图上传</div>
+          <div class="step_desc_info">订单已付款，截图已上传，等待审核。订单已付款，截图已上传，等待审核。</div>
+        </div>
+      </div>
+
+      <!-- 时间轴一步 当前的一步-->
+      <div class="order_item">
+        <!-- 左侧 -->
+        <div class="step_time_current">
+          <div class="step_time_title">2月9日</div>
+          <div class="step_time_desc">10:30</div>
+        </div>
+        <!-- 右侧 -->
+        <div class="step_desc_current">
+          <div class="step_desc_title">支付打款</div>
+          <div class="step_desc_info">
+            <a href="">跳转到某个页面（此为超链接）</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 时间轴一步 未完成-->
       <div class="order_item">
         <!-- 左侧 -->
         <div class="step_time">
@@ -31,32 +71,16 @@
           <div class="step_desc_info">订单已付款，截图已上传，等待审核。订单已付款，截图已上传，等待审核。</div>
         </div>
       </div>
-
-      <!-- 时间轴一步 -->
+      
+      <!-- 时间轴一步 最后完成的一步-->
       <div class="order_item">
         <!-- 左侧 -->
-        <div class="step_time">
-          <div class="step_time_title">2月9日</div>
-          <div class="step_time_desc">10:30</div>
-        </div>
-        <!-- 右侧 -->
-        <div class="step_desc">
-          <div class="step_desc_title">支付打款</div>
-          <div class="step_desc_info">
-            <a href="">跳转到某个页面（此为超链接）</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 时间轴一步 -->
-      <div class="order_item">
-        <!-- 左侧 -->
-        <div class="step_time_active">
+        <div class="step_time_end">
           <div class="step_time_title">2月5日</div>
           <div class="step_time_desc">10:30</div>
         </div>
         <!-- 右侧 -->
-        <div class="step_desc_active">
+        <div class="step_desc_end">
           <div class="step_desc_title">订单交易完成</div>
           <div class="step_desc_info">
             订单已完成。感谢您使用O2O商品平台，期待再次为您服务！

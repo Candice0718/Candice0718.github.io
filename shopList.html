@@ -1,0 +1,42 @@
+<html>
+<!-- O2O商城 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/shopList.css"></link>
+  <script src="./js/lib/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/shopList.js"></script>
+</head>
+
+<body>
+  <header class="o2o_header">
+    <div class="header_back" onclick="historyBack();"></div>
+    <div class="header_title">o2o商城</div>
+  </header>
+  <div class="o2o_content">
+    <div id="shop_list">
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="o2o_modal">
+    <div class="o2o_modal_content">
+      <div class="o2o_modal_content_body">
+        <div class="o2o_modal_content_header">请先登陆<span id="header"></span>账号</div>
+        <div class="o2o_modal_content_container">
+          <input id="name" type="text" placeholder="请输入账户" class="form-control get_phone_check_input" />
+          <input id="password" type="password" placeholder="请输入密码" class="form-control get_phone_check_input" />
+        </div>
+        <div class="o2o_modal_content_btn" onclick="login();">确认并开始购物</div>
+      </div>
+      <div class="o2o_modal_close">
+        <div class="o2o_modal_close_body" onclick="closeModal();"></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

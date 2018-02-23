@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/upload.css"></link>
+  <script src="./js/lib/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/upload.js"></script>
+</head>
+
+<body>
+  <header class="o2o_header">
+    <div class="header_title">上传图片和订单编号</div>
+  </header>
+  <div class="o2o_content">
+    <div id="upload_list">
+      <div class="upload_order">
+        <div class="upload_order_title">订单编号</div>
+        <div class="upload_order_input">
+          <input id="order_num" type="text" placeholder="请输入订单编号" class="form-control order_input" />
+        </div>
+      </div>
+      <div class="upload_image">
+        <div class="upload_order_image_title">上传图片</div>
+        <div class="upload_order_image_list">
+          <!-- 已经上传图片 -->
+          <div class="upload_order_image_done">
+            <div class="upload_order_delete_btn" onclick="deleteImage();"></div>
+            <img src="./images/temp.png"></img>
+          </div>
+          <!-- 正在上传图片 -->
+          <div class="upload_order_image_doing">
+            <img src="./images/temp.png"></img>
+            <div class="upload_order_cover">
+              <div class="upload_progress">
+                <div class="upload_progress_percent"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 上传按钮 -->
+          <div class="submit_btn" onclick="fileSelect();"></div>
+          <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected(event);" style="display:none;">
+        </div>
+      </div>
+      <!-- 按钮 -->
+      <div class="upload_btn_group">
+        <div class="upload_btn upload_submit" onclick="sumbit();">提交</div>
+        <div class="upload_btn upload_back" onclick="historyBack();">返回订单查询页</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

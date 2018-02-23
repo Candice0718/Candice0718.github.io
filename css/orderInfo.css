@@ -61,15 +61,16 @@ body {
 
 .order_number_logo:after {
   content: '';
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   position: absolute;
   z-index: 99;
   top: 0;
-  right: -8px;
+  right: -11px;
   background-image: url('../images/orderLogo.png');
-  background-size: 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 
 .order_number_content {

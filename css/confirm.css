@@ -34,7 +34,7 @@ html, body {
   width: 100%;
   position: absolute;
   top: 50px;
-  height: 90%;
+  height: 100%;
 }
 
 .o2o_warn {
@@ -68,6 +68,12 @@ html, body {
   height: 8px;
   width: 100%;
   background-image: url('../images/border.png');
+}
+.confirm_iframe_wrapper {
+  width:100%;
+  height:100%;
+  -webkit-overflow-scrolling:touch;
+  overflow:auto;
 }
 
 #confirm_iframe {

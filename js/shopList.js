@@ -76,11 +76,18 @@ $(function () {
    * [关闭模态框]
    * @return {[type]} [description]
    */
-  closeModal = function() {
+  closeModal = function(e) {
     $('.o2o_modal').css("display", "none");
     $('#name').val('');
     $('#password').val('');
     selectedName = '';
     selectedId = '';
+    return false;
   };
+
+  // 阻止时间冒泡
+  cancelBubble = function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
 });

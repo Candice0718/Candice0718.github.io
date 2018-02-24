@@ -127,4 +127,10 @@ $(function () {
   closeModal = function() {
     $('.o2o_modal').css("display", "none");
   };
+
+  // 阻止时间冒泡
+  cancelBubble = function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
 });

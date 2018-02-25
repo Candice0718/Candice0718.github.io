@@ -70,7 +70,7 @@ html, body {
   width: 100%;
   background-image: url('../images/border.png');
 }
-.confirm_iframe_wrapper {
+.confirm_iframe_wrapper { /* v3 iframe在iphone不能滚动的问题解决，在iframe外面加一个包裹的div*/
   -webkit-overflow-scrolling:touch;
   overflow:auto;
   height: 70%;
@@ -79,7 +79,7 @@ html, body {
 
 #confirm_iframe {
   position: absolute;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   border: 0;
 }

@@ -68,6 +68,7 @@ body {
 
 .shop_list_item_name {
   display: inline-block;
+  font-weight: bolder;  /* v3 商城字体加粗*/
 }
 
 .o2o_modal {

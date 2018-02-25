@@ -52,6 +52,7 @@ body {
   background-color: #f1f1f1;
   margin-top: 15px;
   text-align: center;
+  cursor:pointer;  /* v3 iphone 手机添加的html事件失效兼容性问题 */
 }
 
 .shop_list_item_logo {

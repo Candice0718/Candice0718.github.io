@@ -31,7 +31,7 @@ $(function () {
     ];
     var str = "";
     for (var i = 0; i < res.length; i++) {
-      str += '<div class="price_item" id="'+res[i].Id+'_'+res[i].Code+'_price_item"> '+res[i].Code+'</div>'
+      str += '<div class="price_item" id="'+res[i].Id+'_'+res[i].Code+'_price_item">'+res[i].Code+'</div>'
     };
     $('.price_list').html(str);
     // 默认第一个价格选中

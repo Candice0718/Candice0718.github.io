@@ -57,7 +57,11 @@ body {
   width: 100%;
   text-align: center;
   height: 80px;
-  line-height: 80px;
+  /* line-height: 80px; */  /* v3 样式换行，去掉这个加上 display, align-items,vertical-align*/
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
   border-bottom: 1px solid #ffffff;
   font-size: 14px;
   cursor:pointer;  /* v3 iphone 手机添加的html事件失效兼容性问题 */
@@ -80,6 +84,7 @@ body {
   height: 40px;
   line-height: 40px;
   text-align: center;
+  white-space:nowrap; /* v3 强制价格不换行 */
 }
 
 .header-image {

@@ -148,6 +148,39 @@ body {
   color: #F23131;
   -webkit-transform:scale(0.91);
 }
+/* v5. 添加最后完成灰色状态 */
+.step_time_to_end {
+  display: inline-block;
+  width: 30%;
+  height: 120px;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+}
+
+.step_time_to_end:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: -12px;
+  background-image: url('../images/to_end.png');
+  background-size: 100%;
+}
+
+.step_time_to_end > .step_time_title {
+  font-size: 13px;
+  color: #999999;
+}
+
+.step_time_to_end > .step_time_desc {
+  font-size: 12px;
+  color: #999999;
+  -webkit-transform:scale(0.91);
+}
+/* v5. 添加最后完成灰色状态 结束*/
 
 .step_time_done{
   display: inline-block;
@@ -265,6 +298,34 @@ body {
   overflow: hidden;
 }
 
+/* v5. 添加最后完成灰色状态 */
+.step_desc_to_end {
+  display: inline-block;
+  width: 68%;
+  height: 120px;
+  vertical-align: top;
+  padding: 0 0 0 15px;
+}
+
+.step_desc_to_end > .step_desc_title {
+  font-size: 16px;
+  color: #999999;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.step_desc_to_end > .step_desc_info {
+  font-size: 13px;
+  color: #999999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/* v5. 添加最后完成灰色状态 结束 */
+
 .step_desc_done {
   display: inline-block;
   width: 68%;
@@ -290,6 +351,7 @@ body {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
+
 .step_desc_current {
   display: inline-block;
   width: 68%;
